@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./index.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+<body>
+    <main>
+        <section id="form-section">
+            <div id="form-wrapper-div">
+                <h1 id="form-heading">Sign-Up Form</h1>
+                <div id="theme-color-wrapper">
+                    <div class="color-pallets" id="purple-pallet"></div>
+                    <div class="color-pallets" id="orange-pallet"></div>
+                    <div class="color-pallets" id="light-green-pallet"></div>
+                    <div class="color-pallets" id="navy-blue-pallet"></div>
+                    <div class="color-pallets" id="pink-pallet"></div>
+                    <div class="color-pallets" id="grey-pallet"></div>
+                    <div class="color-pallets" id="light-purple-pallet"></div>
+                </div>
+                <div id="form-wrapper">
+                    <form action="./index.html" id="sign-up-form">
+                        <h3 class="input-box-titles">Full Name <span class="red-asterisc">*</span></h3>
+                        <input type="text" name="uname" placeholder="e.g.Prashant Rohankar" class="input-boxes" id="fullname-box">
+                        <p class="error-message" id="name-error">Please enter valid name.</p>
+                        <h3 class="input-box-titles">Email <span class="red-asterisc">*</span></h3>
+                        <input type="text" name="email" placeholder="e.g.example@gmail.com" class="input-boxes" id="email-box">
+                        <p class="error-message" id="email-error">Please enter valid email.</p>
+                        <h3 class="input-box-titles">Password <span class="red-asterisc">*</span></h3>
+                        <input type="password" name="password" class="input-boxes" id="password-box">
+                        <div id="password-errors-div">
+                            <p class="error-message display-pass-errors" id="char8-error">
+                                <i class="fas fa-times-circle" id="char8-icon"></i>
+                                Must be atleast 8 characters!
+                            </p>
+                            <p class="error-message display-pass-errors" id="num1-error">
+                                <i class="fas fa-times-circle" id="num1-icon"></i>
+                                Must contain atleast 1 number!
+                            </p>
+                            <p class="error-message display-pass-errors" id="cap1-error">
+                                <i class="fas fa-times-circle" id="cap1-icon"></i>
+                                Must contain atleast 1 in Capital Case!
+                            </p>
+                            <p class="error-message display-pass-errors" id="special-char-error">
+                                <i class="fas fa-times-circle" id="cap1-icon"></i>
+                                Must contain atleast 1 Special Character!(@, _ , -)
+                            </p>
+                        </div>
+                       
+                        <h3 class="input-box-titles">Re-type Password <span class="red-asterisc">*</span></h3>
+                        <input type="password" name="repassword" class="input-boxes" id="re-password-box">
+                        <p class="error-message" id="repass-error">Password do not match</p>
+                        <h3 class="input-box-titles">Gender <span class="red-asterisc">*</span></h3>
+                        <select name="gender" id="gender-selector">
+                            <option value="select">Select</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <p class="error-message">Please select gender</p>
+                        <div></div>
+                        <input type="submit" name="submit" value="Sign Up" id="sign-up-btn">
+                        <p class="error-message" id="fields-error">Please fill all fields!</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- <div id="error-box-div">
+            <div>
+                <h1><i class="fas fa-exclamation-circle"></i>Error</h1>
+                <h3>Please fill all fields!</h3>
+            </div>
+        </div> -->
+    </main>
+
+    <script src="./index.js" type="text/javascript"></script>
+</body>
+</html>
